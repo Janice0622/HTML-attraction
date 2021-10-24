@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap網頁</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+	<style>
+	body, html {height: 105%;}
+    .bg {background-image: url("images/51.jpg");
+    height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+	
+	<div class="container">
+	  <a href="index.html"><button type="button" class="btn btn-default btn-block">首頁</button></a>
+	</div>
+	<p>
+	<center><h1><b>我的網頁<b></h1></center>
+	<div class="container">
+	  <div class="panel panel-info">
+        <div class="panel-heading">
+	      <h3>架構&內容</h3>
+	    </div>
+        <div class="panel-body">
+	      <!-- 觸發互動視窗的按鈕 -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">詳細內容</button>
+	    </div>
+      </div>	
+      <!-- 互動視窗 -->
+      <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h2 class="modal-title">架構&內容</h2>
+            </div>
+            <div class="modal-body">
+              以旅遊為主題，分了六個我喜歡的國家，分別介紹當地幾個有名的景點和一些景點介紹、官網。<br>
+			  運用了多種功能，各自以不同種排版形式來介紹，有的直接文字介紹，有的則是網站連結。<br><br>
+			  <img src="images\2.png" width="100%"><br><br>
+			  日本的網站使用了表格把日本分成四大區塊，再以縮圖介紹三個景點，返回首頁的地方則是使用麵包屑功能。<br><br>
+			  <img src="images\3.png" width="100%"><br><br>
+			  韓國的網站主要是以摺疊效果介紹景點，返回首頁的地方則是使用寬度與父元素相同的按鈕功能。<br><br>
+			  <img src="images\4.png" width="100%"><br><br>
+			  新加坡的網站是簡易的介紹，功能主要在圖片上，返回首頁的地方則是使用色彩按鈕功能。<br><br>
+			  <img src="images\5.png" width="100%"><br><br>
+			  泰國的網站是以面板功能來介紹，返回首頁的地方則是使用分頁導覽功能。<br><br>
+			  <img src="images\6.png" width="100%"><br><br>
+			  義大利的網站是以導覽功能介紹和輪播圖片，返回首頁的地方則是使用麵包屑功能。<br><br>
+			  <img src="images\7.png" width="100%"><br><br>
+			  澳洲的網站是以簡單圖文介紹，改變英文字體，返回首頁的地方則是使用導覽列功能。
+            </div>
+            <div class="modal-footer">
+              <a href="8.html"><button type="button" class="btn btn-primary btn-lg">確定</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+	
+	<aside>
+	  <div class="col-sm-2 col-sm-offset-1">
+	    <div class="panel panel-danger">
+		  <div class="panel-heading">
+		    <h3>國家</h3>
+		  </div>
+		  <div class="panel-body">
+		    <ol class="list-unstyled">
+			  <li><a href="1.html">日本</a></li>
+			  <li><a href="2.html">韓國</a></li>
+			  <li><a href="3.html">新加坡</a></li>
+			  <li><a href="4.html">泰國</a></li>
+			  <li><a href="5.html">義大利</a></li>
+			  <li><a href="6.html">澳洲</a></li>
+			</ol>
+	      </div>
+		</div>
+		<div class="panel panel-info">
+		  <div class="panel-heading">
+		    <h3>更多國家</h3>
+		  </div>
+		  <div class="panel-body">
+		    <ol class="list-unstyled">
+			  <li><a href="https://blog.kkday.com/3486/america-usa-new-york-must-go">紐約</a></li>
+			  <li><a href="https://tw.bring-you.info/must-go-in-london">英國</a></li>
+			  <li><a href="https://pj20120619.pixnet.net/blog/post/191515911-%E3%80%90%E9%A6%AC%E4%BE%86%E8%A5%BF%E4%BA%9E-%E6%97%85%E9%81%8A%E3%80%91%E5%90%89%E9%9A%86%E5%9D%A1%E5%8D%81%E5%A4%A7%E6%99%AF%E9%BB%9E%E7%B2%BE%E8%8F%AF%E7%AF%87-%E6%94%BE">馬來西亞</a></li>
+			  <li><a href="https://tw.bring-you.info/paris-attractions">法國</a></li>
+			  <li><a href="https://blog.kkday.com/27133/europe-iceland-must-visit">冰島</a></li>
+			</ol>
+	      </div>
+		</div>
+	  </div>
+	</aside>
+	<hr>
+  <form><center>
+      <h2><b>簡易問卷</b></h2>
+	  <p>姓名:<input type="text" name="userName" size="20"></p>
+	  <p>學號:<input type="text" name="user" size="20"></p>
+
+	  喜歡這個網頁嗎?
+	  <br>
+	  <input type="radio" name="select" value="e1" checked>非常喜歡
+	  <input type="radio" name="select" value="e2">喜歡
+	  <input type="radio" name="select" value="e3">尚可 
+	  <input type="radio" name="select" value="e4">不喜歡
+	  <br>
+	  喜歡的原因
+	  <br>
+	  <input type="checkbox" name="interest[]" value="chinese" checked>簡潔
+	  <input type="checkbox" name="interest[]" value="english">美觀
+	  <input type="checkbox" name="interest[]" value="math">清楚明確
+	  <input type="checkbox" name="interest[]" value="society">排版
+	  <input type="checkbox" name="interest[]" value="physical">不喜歡
+	  <br>
+	  建議:
+      <br>	  
+      <textarea name="userTrouble" cols="40" rows="5"></textarea>
+	  <p>
+	<br>
+	<p><input type="submit" value="提交">
+	<input type="reset" value="重新輸入"></p>
+	</select>
+	  
+	</center></form>
+	<p class="py-5 text-center">
+    </div>
+    
+  </body>
+</html>
